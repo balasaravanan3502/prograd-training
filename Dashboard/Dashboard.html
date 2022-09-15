@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/190e3c7122.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,11 +19,15 @@
     <title>Dashboard</title>
   </head>
   <body>
+
     <nav class="wrapper">
       <div class="sidebar">
         <div class="logo">
-          <i class="fa-sharp fa-solid fa-bars"></i>
+          <i class="fa-regular fa-window-maximize"></i>
           <h2>Dashboard</h2>
+        </div>
+        <div class="sidenav-hambuger">
+          <i class="fa-sharp fa-solid fa-close"></i>
         </div>
         <ul>
           <li class="nav-sec">
@@ -84,14 +89,21 @@
             </div>
           </li>
         </ul>
+        <div class="navbar-user-profile">
+          <img
+            src="https://avatars.githubusercontent.com/u/40751854?v=4"
+            alt="vpbs"
+          />
+          <span>Balasaravanan</span>
+        </div>
       </div>
     </nav>
       <section class="main">
         <section class="top-bar">
           <div class="top-section-one">
-            <div class="nav-hambuger">
+            <button class="nav-hambuger">
               <i class="fa-sharp fa-solid fa-bars"></i>
-            </div>
+            </button>
             <div class="search-bar">
               <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
               <input type="text" />
@@ -205,9 +217,23 @@
                   <i class="fa-sharp fa-solid fa-code-fork"></i>
                 </div>
               </div>
+              <div class="project-card">
+                <div class="project-title">Super Project</div>
+                <div class="project-desc">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+                  laborum quo similique repellendus. Nobis repudiandae
+                  cupiditate
+                </div>
+                <div class="action-icon">
+                  <i class="fa-sharp fa-solid fa-star"></i>
+                  <i class="fa-sharp fa-solid fa-eye"></i>
+                  <i class="fa-sharp fa-solid fa-code-fork"></i>
+                </div>
+              </div>
+              
             </div>
           </article>
-          <section class="right-panel">
+          <aside class="right-panel">
             <article class="announ-section">
               <div class="section-heading">Announcements</div>
               <div class="announ">
@@ -261,9 +287,11 @@
                 </div>
               </div>
             </article>
-          </section>
+          </aside>
         </section>
       </section>
     </div>
+    <script src="Dashboard.js"></script>
+
   </body>
 </html>
